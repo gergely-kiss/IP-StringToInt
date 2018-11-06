@@ -31,14 +31,14 @@ public class ConverterWithBuiltInValidation {
 	 * @throws Exception if the input is not a number
 	 */
 	private int validateAndConvertStringToInt(String input) throws Exception {
-		boolean isNegative = input.charAt(0) == '-';
+		boolean isNegative = Validator.isNegative(input);
 		int convertedNumber = 0;
 
 		if (isNegative) {
 			input = input.substring(1);
 		}
 		for (int i = 0; i < input.length(); i++) {
-			if(input.charAt(i) < Constants.ZERO || input.charAt(i) > Constants.NINE ) {
+			if(Validator.isValid(input.charAt(i))) {
 				throw new Exception(input + Constants.ERROR_MESSAGE);
 			}
 			convertedNumber = convertedNumber * 10;

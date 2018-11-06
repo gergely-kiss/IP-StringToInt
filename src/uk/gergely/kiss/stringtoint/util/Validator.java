@@ -22,19 +22,21 @@ public class Validator {
 	public static boolean isNumber(String input) {
 		
 		for (int index = isNegative(input) ? 1 : 0; index < input.length(); index++) {
-			if(input.charAt(index) < Constants.ZERO || input.charAt(index) > Constants.NINE ) {
+			if(isValid(input.charAt(index))) {
 				return false;
 			}
 		}		
 		return true;
 	}
-
+	public static boolean isValid(char c) {
+		return c < Constants.ZERO || c > Constants.NINE;
+	}
 	/**For determining if the input is starting with "'' sing or not.
 	 * 
 	 * @param input
 	 * @return
 	 */
-	private static boolean isNegative(String input) {
+	public static boolean isNegative(String input) {
 		isNegative = input.charAt(0) == '-';
 		return isNegative;
 	}

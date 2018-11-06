@@ -4,7 +4,7 @@ import uk.gergely.kiss.stringtoint.util.Converter;
 import uk.gergely.kiss.stringtoint.util.ConverterWithBuiltInValidation;
 
 /**
- * Main method with 6 test cases of the converting a String to int
+ * Main method with 7 test cases of the converting a String to int
  * implementation without using any additional libraries.  
  * 
  * @author kiss-
@@ -19,6 +19,7 @@ public class StringToInt {
 		String test3 = "-12O";
 		String test4 = "string";
 		String test5 = "0";
+		String test6 = "--12340";
 
 		Converter converter = new Converter();
 		long startTime = System.currentTimeMillis();
@@ -27,6 +28,7 @@ public class StringToInt {
 		converter.printConvenrtedIntFromString(test3);
 		converter.printConvenrtedIntFromString(test4);
 		converter.printConvenrtedIntFromString(test5);
+		converter.printConvenrtedIntFromString(test6);
 		converter.printConvenrtedIntFromString(1234567890 + "");
 		long stopTime = System.currentTimeMillis();
 		long elapsedTime = stopTime - startTime;
@@ -39,6 +41,7 @@ public class StringToInt {
 		converterWithBuiltInValidation.printConvenrtedIntFromString(test3);
 		converterWithBuiltInValidation.printConvenrtedIntFromString(test4);
 		converterWithBuiltInValidation.printConvenrtedIntFromString(test5);
+		converterWithBuiltInValidation.printConvenrtedIntFromString(test6);
 		converterWithBuiltInValidation.printConvenrtedIntFromString(1234567890 + "");
 		stopTime = System.currentTimeMillis();
 		elapsedTime = stopTime - startTime;
