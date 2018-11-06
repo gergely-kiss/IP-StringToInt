@@ -18,9 +18,9 @@ public class Converter {
 	 */
 	public void printConvenrtedIntFromString(String input) {
 		try {
-			System.out.println("Input String: " + input + ". Converted int: " + convertStringToInt(input) + ".");
+			System.out.println("Converter: Input String: " + input + ". Converted int: " + convertStringToInt(input) + ".");
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("Converter: Input String: " + e.getMessage());
 		}
 	}
 
