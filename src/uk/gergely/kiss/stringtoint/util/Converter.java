@@ -4,7 +4,7 @@ import uk.gergely.kiss.stringtoint.rsc.Constants;
 
 /**
  * Converter to convert String to int and show the result on the console.
- * 
+ *
  * @author kiss-
  *
  */
@@ -13,7 +13,7 @@ public class Converter {
 
 	/**
 	 * Printing the result or the error message on the console.
-	 * 
+	 *
 	 * @param input
 	 */
 	public void printConvenrtedIntFromString(String input) {
@@ -24,9 +24,9 @@ public class Converter {
 		}
 	}
 
-	/**Converting the input String to int with the help of 
+	/**Converting the input String to int with the help of
 	 * integer values of the characters.
-	 * 
+	 *
 	 * @param input String to convert
 	 * @return int converted from the String
 	 * @throws Exception if the input is not a number
